@@ -1,10 +1,17 @@
 .card {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    align-content: center;
+    align-content: center;*/
     border: solid;
     background-color: lightblue;
     border-radius: 10px;
+    
+}
+
+.card__bookmark, .card__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card__question, .card__answer {
@@ -23,11 +30,13 @@
     display: flex;
     justify-content: space-evenly;
     padding: 0px;
-    
+
 }
 
 .tags__item {
     border: solid;
     border-radius: 10px;
+    padding: 0.2rem;
+    background-color: blue;
 }
 
