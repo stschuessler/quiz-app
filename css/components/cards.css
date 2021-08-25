@@ -1,0 +1,49 @@
+.card {
+    /*display: flex;
+    flex-direction: column;
+    align-content: center;*/
+    border: solid;
+    background-color: lightblue;
+    border-radius: 10px;
+    
+}
+
+.card__bookmark {
+    display: flex;
+    justify-content: flex-end;
+    /*align-items: center;*/
+}
+
+.card__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card__question, .card__answer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: solid;
+    background-color: lightsalmon;
+    border-radius: 10px;
+}
+
+.tags {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+
+}
+
+.tags__item {
+    border: solid;
+    border-radius: 10px;
+    padding: 0.2rem;
+    background-color: blue;
+}
+
