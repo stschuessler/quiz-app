@@ -1,20 +1,29 @@
 
 
 .card {
-    /*display: flex;
-    flex-direction: column;
-    align-content: center;*/
     border: solid;
     background-color: lightblue;
     border-radius: 10px;
-    
+    position: relative;
 }
 
-.card__bookmark {
-    display: flex;
-    justify-content: flex-end;
-    /*align-items: center;*/
+
+
+.button__bookmark {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    padding: 0;
+    height: 50px;
+    border-color: navy;
+    border-style: solid;
+    border-width: 20px;
+    border-bottom-color: transparent; 
+    border-radius: 5px;
+    background-color: transparent;
 }
+
+
 
 .card__button {
     display: flex;
