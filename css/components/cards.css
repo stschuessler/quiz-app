@@ -8,11 +8,18 @@
     
 }
 
-.card__bookmark, .card__button {
+.card__bookmark {
+    display: flex;
+    justify-content: flex-end;
+    /*align-items: center;*/
+}
+
+.card__button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .card__question, .card__answer {
     display: flex;
