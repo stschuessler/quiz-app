@@ -7,6 +7,7 @@ html {
 }
 
 body {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-rows: 60px auto 60px;
@@ -21,11 +22,16 @@ main {
 }
 
 h1 {
-    background-color: hotpink;
+    background-color: rgb(60, 60, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
+    height: 4rem;
   }
 
 
 footer {
-    background-color: navy;
+    background-color: rgb(60, 60, 230);
+    padding: 0.5rem;
   }
