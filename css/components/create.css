@@ -1,0 +1,27 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    border: solid;
+}
+
+
+.form__question {
+    margin: 1rem;
+}
+
+.form__answer {
+    margin: 1rem;
+}
+
+.form__tags {
+    margin: 1rem;
+}
+
+.form__input {
+    border: outset 0.3rem;
+    border-color: #5D6998;
+    background-color: #DFE2ED;
+    border-radius: 10px;
+    
+    
+}
