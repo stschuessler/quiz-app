@@ -17,15 +17,19 @@
     </header>
     
     <main>
-        <form>
-            <label for="question" class="form__question">Enter your question:</label>
-            <textarea id="question" rows="5" cols="33">Enter your question</textarea>
+        <form class="form">
 
-            <label for="answer" class="form__answer">Enter your answer:</label>
-            <textarea id="answer" rows="5" cols="33">Enter your answer</textarea>
+            <label for="question" class="form__question">Enter your question:
+                <textarea id="question" class="form__input" rows="5" cols="33">Enter your question</textarea>
+            </label>    
 
-            <label for="tags" class="form__tags">Enter your tags:</label>
-            <textarea id="tags" rows="5" cols="33">Add tags devided by comma</textarea>
+            <label for="answer" class="form__answer">Enter your answer:
+                <textarea id="answer" class="form__input" rows="5" cols="33">Enter your answer</textarea>
+            </label>
+
+            <label for="tags" class="form__tags">Enter your tags:
+                <textarea id="tags" class="form__input" rows="5" cols="33">Add tags devided by comma</textarea>
+            </label>
 
             <button class="form__submit">Submit</button>
 
