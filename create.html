@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <h1 class="header__titel">Create</h1>
+      <h1 class="header__titel">Create</h1>
     </header>
-    
+
     <main>
-        <form class="form">
+      <form class="form">
+        <label for="question" class="form__question"
+          >Enter your question:
+          <textarea id="question" class="form__input" placeholder="Enter your question" rows="5" cols="33">
+</textarea
+          >
+        </label>
 
-            <label for="question" class="form__question">Enter your question:
-                <textarea id="question" class="form__input" >Enter your question</textarea>
-            </label>    
+        <label for="answer" class="form__answer"
+          >Enter your answer:
+          <textarea id="answer" class="form__input" placeholder="Enter your answer" rows="5" cols="33">
+</textarea
+          >
+        </label>
 
-            <label for="answer" class="form__answer">Enter your answer:
-                <textarea id="answer" class="form__input" rows="5" cols="33">Enter your answer</textarea>
-            </label>
+        <label for="tags" class="form__tags"
+          >Enter your tags:
+          <textarea id="tags" class="form__input" placeholder="Add tags devided by comma" rows="5" cols="33">
+</textarea
+          >
+        </label>
 
-            <label for="tags" class="form__tags">Enter your tags:
-                <textarea id="tags" class="form__input" rows="5" cols="33">Add tags devided by comma</textarea>
-            </label>
-
-            <button class="form__submit">Submit</button>
-
-           
-        </form>
-
-    
+        <button class="form__submit">Submit</button>
+      </form>
     </main>
 
     <footer>
-        <nav class="nav">
-            <a href="./index.html" class="nav__icon"><img src="./images/home.png"></a>
-            <a href="./bookmark.html" class="nav__icon"><img src="./images/bookmark-outline.png"></a>
-            <a href="./create.html" class="nav__icon"><img src="./images/card-text-outline.png"></a>
-            <a href="" class="nav__icon"><img src="./images/account-circle-outline.png"></a>
-        </nav>
+      <nav class="nav">
+        <a href="./index.html" class="nav__icon"
+          ><img src="./images/home.png"
+        /></a>
+        <a href="./bookmark.html" class="nav__icon"
+          ><img src="./images/bookmark-outline.png"
+        /></a>
+        <a href="./create.html" class="nav__icon"
+          ><img src="./images/card-text-outline.png"
+        /></a>
+        <a href="" class="nav__icon"
+          ><img src="./images/account-circle-outline.png"
+        /></a>
+      </nav>
     </footer>
-
-</body>
+  </body>
 </html>
