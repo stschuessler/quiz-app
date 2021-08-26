@@ -1,8 +1,9 @@
 
 
 .card {
-    border: solid;
-    background-color: lightblue;
+    border: outset 0.3rem;
+    border-color: #5D6998;
+    background-color: #DFE2ED;
     border-radius: 10px;
     position: relative;
 }
@@ -15,7 +16,7 @@
     right: 10px;
     padding: 0;
     height: 50px;
-    border-color: navy;
+    border-color: #5D6998;
     border-style: solid;
     border-width: 20px;
     border-bottom-color: transparent; 
@@ -38,29 +39,45 @@
     padding: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    border: solid;
-    background-color: lightsalmon;
+    border: outset 0.4rem;
+    border-color: #FFF2D5;
+    background-color: #E0D27D;
     border-radius: 10px;
+
 }
+
+
+    
 
 .tags {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     padding: 0px;
-
 }
 
+
+
 .tags__item {
-    border: solid;
-    border-radius: 10px;
-    padding: 0.2rem;
-    background-color: blue;
+    border: outset;
+    border-radius: 5px;
+    padding: 0.2rem 1rem;
+    background-color: #BFB5D4;
+}
+
+.tags__item:hover {
+    background-color: #6F5C99;
+
 }
 
 .nav {
     display: flex;
     justify-content: space-evenly;
     border-radius: 10px;
+}
+
+.nav__icon:hover {
+    padding: 0.1rem;
+    background-color: #B5BBD4;
 }
 
