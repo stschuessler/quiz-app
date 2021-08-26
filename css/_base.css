@@ -9,6 +9,8 @@ html {
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    
     display: grid;
     grid-template-rows: 60px auto 60px;
     height: 100vh;
@@ -23,11 +25,14 @@ main {
 
 h1 {
     background-color: #37457A;
-    display: flex;
-    justify-content: center;
     align-items: center;
     margin: 0;
-    height: 4rem;
+    height: 5rem;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    text-align: center;
+    padding-top: 1rem;
   }
 
 
