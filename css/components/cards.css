@@ -6,6 +6,8 @@
     background-color: #DFE2ED;
     border-radius: 10px;
     position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -37,15 +39,22 @@
     display: flex;
     justify-content: center;
     padding: 1rem;
+    margin-bottom: 1.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
     border: outset 0.4rem;
     border-color: #FFF2D5;
     background-color: #E0D27D;
     border-radius: 10px;
-
 }
 
+.card__question {
+    margin-top: 2.5rem;
+}
+.card__answer { 
+    font-weight: bold; 
+    margin-top: 1.5rem;
+}   
 
     
 
