@@ -22,7 +22,7 @@ main {
 }
 
 h1 {
-    background-color: rgb(60, 60, 230);
+    background-color: #37457A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +32,6 @@ h1 {
 
 
 footer {
-    background-color: rgb(60, 60, 230);
+    background-color: #37457A;
     padding: 0.5rem;
   }
