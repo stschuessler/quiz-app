@@ -23,6 +23,10 @@ main {
   grid-gap: 24px;
 }
 
+main.main--hidden {
+  display: none;
+}
+
 h1 {
   background-color: #37457a;
   align-items: center;

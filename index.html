@@ -20,7 +20,7 @@
       <h1 class="header__titel">Quiz-App</h1>
     </header>
 
-    <main>
+    <main class="main" id="questions">
       <section class="card">
         <button class="button__bookmark" aria-label="bookmark"></button>
         <h2 class="card__question">My Question: Lorem ipsum, dolor sit...</h2>
@@ -64,26 +64,115 @@
       </section>
     </main>
 
+    <main class="main main--hidden" id="bookmarks">
+      <section class="card">
+        <button class="button__bookmark"></button>
+        <h2 class="card__question">My Question: Lorem ipsum, dolor sit...</h2>
+        <!-- <button class="card__button">Show Answer</button>             -->
+        <p class="card__answer card__answer--hidden">
+          Answer: Lorem, ipsum dolor sit amet ...
+        </p>
+        <ul class="tags">
+          <li class="tags__item">tag 1</li>
+          <li class="tags__item">tag 2</li>
+          <li class="tags__item">tag 3</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <button class="button__bookmark"></button>
+        <h2 class="card__question">My Question: Lorem ipsum, dolor sit...</h2>
+        <!-- <button class="card__button">Show Answer</button> -->
+        <p class="card__answer card__answer--hidden">
+          Answer: Lorem, ipsum dolor sit amet ...
+        </p>
+        <ul class="tags">
+          <li class="tags__item">tag 1</li>
+          <li class="tags__item">tag 2</li>
+          <li class="tags__item">tag 3</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <button class="button__bookmark"></button>
+        <h2 class="card__question">My Question: Lorem ipsum, dolor sit...</h2>
+        <!-- <button class="card__button">Show Answer</button> -->
+        <p class="card__answer card__answer--hidden">
+          Answer: Lorem, ipsum dolor sit amet ...
+        </p>
+        <ul class="tags">
+          <li class="tags__item">tag 1</li>
+          <li class="tags__item">tag 2</li>
+          <li class="tags__item">tag 3</li>
+        </ul>
+      </section>
+    </main>
+
+    <main class="main main--hidden" id="create">
+      <form class="form">
+        <label for="question" class="form__question"
+          >Enter your question:
+          <textarea
+            id="question"
+            class="form__input"
+            placeholder="Enter your question"
+            rows="5"
+            cols="33"
+          ></textarea>
+        </label>
+
+        <label for="answer" class="form__answer"
+          >Enter your answer:
+          <textarea
+            id="answer"
+            class="form__input"
+            placeholder="Enter your answer"
+            rows="5"
+            cols="33"
+          ></textarea>
+        </label>
+
+        <label for="tags" class="form__tags"
+          >Enter your tags:
+          <textarea
+            id="tags"
+            class="form__input"
+            placeholder="Add tags devided by comma"
+            rows="5"
+            cols="33"
+          ></textarea>
+        </label>
+
+        <button class="form__submit">Submit</button>
+      </form>
+    </main>
+
     <footer>
       <nav class="nav">
-        <a href="./index.html" class="nav__icon"
-          ><img src="./images/home.png" alt="An icon with the shape of a house"
-        /></a>
-        <a href="./bookmark.html" class="nav__icon"
-          ><img
+        <button class="nav__icon" id="question-button">
+          <img
+            src="./images/home.png"
+            alt="An icon with the shape of a house"
+          />
+        </button>
+        <button class="nav__icon" id="bookmark-button">
+          <img
             src="./images/bookmark-outline.png"
             alt="An icon with the shape of a bookmark"
-        /></a>
-        <a href="./create.html" class="nav__icon"
-          ><img
+          />
+        </button>
+        <button class="nav__icon" id="create-button">
+          <img
             src="./images/card-text-outline.png"
             alt="An icon with the shape of a card"
-        /></a>
-        <a href="" class="nav__icon"
-          ><img
+          />
+        </button>
+        <button class="nav__icon" id="profil-button">
+          <img
             src="./images/account-circle-outline.png"
             alt="An icon with the shape of a persons profile"
-        /></a>
+          />
+        </button>
       </nav>
     </footer>
   </body>
