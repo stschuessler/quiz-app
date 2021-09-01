@@ -5,50 +5,48 @@
 }
 
 .form__question {
-    margin: 1rem;
- 
+  margin: 1rem;
 }
 
 .form__answer {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .form__tags {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .form {
-    display: block;
-    border: outset 0.3rem;
-    border-color: #5d6998;
-    background-color: #dfe2ed;
-    border-radius: 10px;
-    padding: 1.5rem;
-    margin-top: 1rem;;
-    position: relative;
+  display: block;
+  border: outset 0.3rem;
+  border-color: #5d6998;
+  background-color: #dfe2ed;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  position: relative;
 }
 
 .form__input {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    border: outset 0.4rem;
-    border-color: #fff2d5;
-    background-color: #e0d27d;
-    border-radius: 10px;
-    width: calc(100% - 2rem);
-    margin: 1rem;
-
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border: outset 0.4rem;
+  border-color: #fff2d5;
+  background-color: #e0d27d;
+  border-radius: 10px;
+  width: calc(100% - 2rem);
+  margin: 1rem;
 }
 
 .form__submit {
-    position: absolute;
-    left: calc(50% - 2.5rem);
-    height: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  position: absolute;
+  left: calc(50% - 2.5rem);
+  height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .form__submit:hover {
-    background-color: #37457A;
+  background-color: #37457a;
 }

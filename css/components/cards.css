@@ -1,96 +1,84 @@
-
-
 .card {
-    border: outset 0.3rem;
-    border-color: #5D6998;
-    background-color: #DFE2ED;
-    border-radius: 10px;
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    position: relative;
+  border: outset 0.3rem;
+  border-color: #5d6998;
+  background-color: #dfe2ed;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
 }
-
-
 
 .button__bookmark {
-    position: absolute;
-    top: -20px;
-    right: 10px;
-    padding: 0;
-    height: 50px;
-    border-color: #5D6998;
-    border-style: solid;
-    border-width: 20px;
-    border-bottom-color: transparent; 
-    border-radius: 5px;
-    background-color: transparent;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  padding: 0;
+  height: 50px;
+  border-color: #5d6998;
+  border-style: solid;
+  border-width: 20px;
+  border-bottom-color: transparent;
+  border-radius: 5px;
+  background-color: transparent;
 }
-
-
 
 .card__button {
-    position: absolute;
-    left: calc(50% - 3rem);
+  position: absolute;
+  left: calc(50% - 3rem);
 }
 
-.card__button:hover{
-    background-color: #37457A;
+.card__button:hover {
+  background-color: #37457a;
 }
 
-
-.card__question, .card__answer {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    border: outset 0.4rem;
-    border-color: #FFF2D5;
-    background-color: #E0D27D;
-    border-radius: 10px;
+.card__question,
+.card__answer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: outset 0.4rem;
+  border-color: #fff2d5;
+  background-color: #e0d27d;
+  border-radius: 10px;
 }
 
 .card__question {
-    margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
-.card__answer { 
-    font-weight: bold; 
-    margin-top: 4rem;
-}   
-
-    
+.card__answer {
+  font-weight: bold;
+  margin-top: 4rem;
+}
 
 .tags {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
 }
 
-
-
 .tags__item {
-    border: outset;
-    border-radius: 5px;
-    padding: 0.2rem 1rem;
-    background-color: #BFB5D4;
+  border: outset;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+  background-color: #bfb5d4;
 }
 
 .tags__item:hover {
-    background-color: #6F5C99;
-
+  background-color: #6f5c99;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
 }
 
 .nav__icon:hover {
-    padding: 0.1rem;
-    background-color: #B5BBD4;
+  padding: 0.1rem;
+  background-color: #b5bbd4;
 }
-
