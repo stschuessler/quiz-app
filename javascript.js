@@ -12,11 +12,21 @@ const bookmarkButton = document.querySelector('#bookmark-button')
 const createButton = document.querySelector('#create-button')
 const profileButton = document.querySelector('#profile-button')
 
-questionButton.addEventListener('click', () => {
-  questionContent.classList.remove('main--hidden')
+function getEl(selector) {
+  const el = document.querySelector(selector)
+  return el
+}
+
+function hideAll() {
+  questionContent.classList.add('main--hidden')
   bookmarksContent.classList.add('main--hidden')
   createContent.classList.add('main--hidden')
   profileContent.classList.add('main--hidden')
+}
+
+questionButton.addEventListener('click', () => {
+  hideAll()
+  questionContent.classList.remove('main--hidden')
 })
 
 /*EventListener für Click Aktion +
@@ -25,22 +35,16 @@ Sichtbarkeit bookmark-main
 Hidden create-main
 */
 bookmarkButton.addEventListener('click', () => {
-  questionContent.classList.add('main--hidden')
+  hideAll()
   bookmarksContent.classList.remove('main--hidden')
-  createContent.classList.add('main--hidden')
-  profileContent.classList.add('main--hidden')
 })
 
 createButton.addEventListener('click', () => {
-  questionContent.classList.add('main--hidden')
-  bookmarksContent.classList.add('main--hidden')
+  hideAll()
   createContent.classList.remove('main--hidden')
-  profileContent.classList.add('main--hidden')
 })
 
 profileButton.addEventListener('click', () => {
-  questionContent.classList.add('main--hidden')
-  bookmarksContent.classList.add('main--hidden')
-  createContent.classList.add('main--hidden')
+  hideAll()
   profileContent.classList.remove('main--hidden')
 })
