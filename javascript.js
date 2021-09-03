@@ -94,10 +94,36 @@ const answerHidden = document.querySelector('.card__answer--hidden')
 // })
 
 /* EventListener für Click Aktion mit toggle Funktion*/
-showAnswer.addEventListener('click', () => {
-  if (answerHidden.classList.contains('card__answer--hidden')) {
-    answerHidden.classList.remove('card__answer--hidden')
-  } else {
-    answerHidden.classList.add('card__answer--hidden')
-  }
+// showAnswer.addEventListener('click', () => {
+//   if (answerHidden.classList.contains('card__answer--hidden')) {
+//     answerHidden.classList.remove('card__answer--hidden')
+//   } else {
+//     answerHidden.classList.add('card__answer--hidden')
+//   }
+// })
+
+/* EventListener für Click Aktion mit toggle Funktion für alle Answer Buttons*/
+
+const showAnswerArray = document.querySelectorAll('.card__button')
+
+const answerHiddenArray = document.querySelectorAll('.card__answer--hidden')
+
+showAnswerArray.forEach((element, index) => {
+  element.addEventListener('click', () => {
+    if (answerHiddenArray[index].classList.contains('card__answer--hidden')) {
+      answerHiddenArray[index].classList.remove('card__answer--hidden')
+    } else {
+      answerHiddenArray[index].classList.add('card__answer--hidden')
+    }
+  })
 })
+
+// showAnswerArray.forEach((showAnswer, index) => {
+//   showAnswer.addEventListener('click', () => {
+//     if (answerHidden.classList.contains('card__answer--hidden')) {
+//       answerHidden.classList.remove('card__answer--hidden')
+//     } else {
+//       answerHidden.classList.add('card__answer--hidden')
+//     }
+//   })
+// })
