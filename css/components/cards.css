@@ -60,6 +60,11 @@
   border-radius: 10px;
 }
 
+.card__answer--hidden {
+  /* visibility: hidden; */
+  display: none;
+}
+
 .card__question {
   margin-top: 2.5rem;
 }
