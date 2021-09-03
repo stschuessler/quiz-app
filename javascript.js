@@ -82,3 +82,13 @@ switchButtonArray.forEach(switchButton => {
     }
   })
 })
+
+/* Button zeigt die Antwort-Karte  */
+
+const showAnswer = document.querySelector('.card__button')
+const answerHidden = document.querySelector('.card__answer--hidden')
+
+/* EventListener für Click Aktion */
+showAnswer.addEventListener('click', () => {
+  answerHidden.classList.remove('card__answer--hidden')
+})
