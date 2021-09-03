@@ -63,8 +63,22 @@ const switchButton = document.querySelector('.button__bookmark')
 // })
 
 /* Switch bookmark Button per if..else method) */
-switchButton.addEventListener('click', () => {
-  if (switchButton.classList.contains('button__bookmark--clicked')) {
-    switchButton.classList.remove('button__bookmark--clicked')
-  } else switchButton.classList.add('button__bookmark--clicked')
+// switchButton.addEventListener('click', () => {
+//   if (switchButton.classList.contains('button__bookmark--clicked')) {
+//     switchButton.classList.remove('button__bookmark--clicked')
+//   } else switchButton.classList.add('button__bookmark--clicked')
+// })
+
+/* Switch bookmark Button für alle bookmarks */
+
+const switchButtonArray = document.querySelectorAll('.button__bookmark')
+
+switchButtonArray.forEach(switchButton => {
+  switchButton.addEventListener('click', () => {
+    if (switchButton.classList.contains('button__bookmark--clicked')) {
+      switchButton.classList.remove('button__bookmark--clicked')
+    } else {
+      switchButton.classList.add('button__bookmark--clicked')
+    }
+  })
 })
