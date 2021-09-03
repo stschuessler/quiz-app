@@ -53,3 +53,18 @@ profileButton.addEventListener('click', () => {
   hideAll()
   profileContent.classList.remove('main--hidden')
 })
+
+/* Zugriff auf die bookmark buttons mit Zuweisung auf Variable */
+const switchButton = document.querySelector('.button__bookmark')
+
+/* Switch bookmark Button per toggle method) */
+// switchButton.addEventListener('click', () => {
+//   switchButton.classList.toggle('button__bookmark--clicked')
+// })
+
+/* Switch bookmark Button per if..else method) */
+switchButton.addEventListener('click', () => {
+  if (switchButton.classList.contains('button__bookmark--clicked')) {
+    switchButton.classList.remove('button__bookmark--clicked')
+  } else switchButton.classList.add('button__bookmark--clicked')
+})
