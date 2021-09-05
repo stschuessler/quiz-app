@@ -115,3 +115,9 @@ cardAnswerButtonArray.forEach((element, index) => {
     }
   })
 })
+
+const submitButton = document.querySelector('.form__submit')
+
+submitButton.addEventListener('click', () => {
+  alert('funzt')
+})
