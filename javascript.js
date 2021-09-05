@@ -55,7 +55,7 @@ profileButton.addEventListener('click', () => {
 })
 
 /* Zugriff auf die bookmark buttons mit Zuweisung auf Variable */
-const switchButton = document.querySelector('.button__bookmark')
+//const switchButton = document.querySelector('.button__bookmark')
 
 /* Switch bookmark Button per toggle method) */
 // switchButton.addEventListener('click', () => {
@@ -71,59 +71,47 @@ const switchButton = document.querySelector('.button__bookmark')
 
 /* Switch bookmark Button für alle bookmarks */
 
-const switchButtonArray = document.querySelectorAll('.button__bookmark')
+const bookmarkButtonArray = document.querySelectorAll('.button__bookmark')
 
-switchButtonArray.forEach(switchButton => {
-  switchButton.addEventListener('click', () => {
-    if (switchButton.classList.contains('button__bookmark--clicked')) {
-      switchButton.classList.remove('button__bookmark--clicked')
+bookmarkButtonArray.forEach(button => {
+  button.addEventListener('click', () => {
+    if (button.classList.contains('button__bookmark--clicked')) {
+      button.classList.remove('button__bookmark--clicked')
     } else {
-      switchButton.classList.add('button__bookmark--clicked')
+      button.classList.add('button__bookmark--clicked')
     }
   })
 })
 
 /* Button zeigt die Antwort-Karte  */
-
-const showAnswer = document.querySelector('.card__button')
-const answerHidden = document.querySelector('.card__answer--hidden')
-
+/* Diese beiden Konstanten benötige ich für die große Abfrage nicht mehr */
+//const cardAnswerButton = document.querySelector('.card__button')
+//const answer = document.querySelector('.card__answer--hidden')
 /* EventListener für Click Aktion */
-// showAnswer.addEventListener('click', () => {
-//   answerHidden.classList.remove('card__answer--hidden')
+// cardAnswerButton.addEventListener('click', () => {
+//   answer.classList.remove('card__answer--hidden')
 // })
-
 /* EventListener für Click Aktion mit toggle Funktion*/
-// showAnswer.addEventListener('click', () => {
-//   if (answerHidden.classList.contains('card__answer--hidden')) {
-//     answerHidden.classList.remove('card__answer--hidden')
+// cardAnswerButton.addEventListener('click', () => {
+//   if (answer.classList.contains('card__answer--hidden')) {
+//     answer.classList.remove('card__answer--hidden')
 //   } else {
-//     answerHidden.classList.add('card__answer--hidden')
+//     answer.classList.add('card__answer--hidden')
 //   }
 // })
 
 /* EventListener für Click Aktion mit toggle Funktion für alle Answer Buttons*/
+const cardAnswerButtonArray = document.querySelectorAll('.card__button')
+const cardAnswerArray = document.querySelectorAll('.card__answer--hidden')
 
-const showAnswerArray = document.querySelectorAll('.card__button')
-
-const answerHiddenArray = document.querySelectorAll('.card__answer--hidden')
-
-showAnswerArray.forEach((element, index) => {
+cardAnswerButtonArray.forEach((element, index) => {
   element.addEventListener('click', () => {
-    if (answerHiddenArray[index].classList.contains('card__answer--hidden')) {
-      answerHiddenArray[index].classList.remove('card__answer--hidden')
+    if (cardAnswerArray[index].classList.contains('card__answer--hidden')) {
+      cardAnswerArray[index].classList.remove('card__answer--hidden')
+      cardAnswerButtonArray[index].innerHTML = 'Answer'
     } else {
-      answerHiddenArray[index].classList.add('card__answer--hidden')
+      cardAnswerArray[index].classList.add('card__answer--hidden')
+      cardAnswerButtonArray[index].innerHTML = 'Show Answer'
     }
   })
 })
-
-// showAnswerArray.forEach((showAnswer, index) => {
-//   showAnswer.addEventListener('click', () => {
-//     if (answerHidden.classList.contains('card__answer--hidden')) {
-//       answerHidden.classList.remove('card__answer--hidden')
-//     } else {
-//       answerHidden.classList.add('card__answer--hidden')
-//     }
-//   })
-// })
