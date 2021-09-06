@@ -25,12 +25,6 @@ function hideAll() {
   mainElArray.forEach((mainEl, index) => {
     mainEl.classList.add('main--hidden')
   })
-
-  /* ausführliche Schreibtweise der hideAll Funktion */
-  // questionContent.classList.add('main--hidden')
-  // bookmarksContent.classList.add('main--hidden')
-  // createContent.classList.add('main--hidden')
-  // profileContent.classList.add('main--hidden')
 }
 
 /* EventListener für Click Aktion */
@@ -67,6 +61,8 @@ bookmarkButtonArray.forEach(button => {
     }
   })
 })
+
+switchButton.classList.toggle('button__bookmark--clicked')
 
 /* EventListener für Click Aktion mit toggle Funktion für alle Answer Buttons*/
 const cardAnswerButtonArray = document.querySelectorAll('.card__button')
