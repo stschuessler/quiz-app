@@ -1,10 +1,10 @@
 // Rewrite of the HTML to use createElement() and appendChild()
 
-function renderCard(cardData) {
+function renderCard(cardData, targetElement) {
   const cardSection = document.createElement('section')
   cardSection.classList.add('card')
   //document.body.appendChild(cardSection)
-  document.getElementById('questions').appendChild(cardSection)
+  document.getElementById(targetElement).appendChild(cardSection)
 
   const cardBookmark = document.createElement('button')
   cardBookmark.classList.add('button__bookmark')
