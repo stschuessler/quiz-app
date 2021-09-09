@@ -62,7 +62,7 @@ bookmarkButtonArray.forEach(button => {
   })
 })
 
-switchButton.classList.toggle('button__bookmark--clicked')
+//switchButton.classList.toggle('button__bookmark--clicked')
 
 /* EventListener für Click Aktion mit toggle Funktion für alle Answer Buttons*/
 const cardAnswerButtonArray = document.querySelectorAll('.card__button')
