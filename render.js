@@ -57,12 +57,21 @@ const cardDataExample = [
 ]
 
 //Aufruf der Funktion für jedes Objekt
-cardDataExample.forEach(element => {
-  renderCard(element, 'questions')
+
+function buildMain(element) {
+  const getMain = document.getElementById(element)
+  //  const getMain = document.querySelect(#element)
+  getMain.innerHTML = ''
+}
+
+buildMain('questions')
+
+cardDataExample.forEach(dataObject => {
+  renderCard(dataObject, 'questions')
 })
 
-cardDataExample.forEach(element => {
-  renderCard(element, 'bookmarks')
+cardDataExample.forEach(dataObject => {
+  renderCard(dataObject, 'bookmarks')
 })
 
 // body entspricht bei mir dann .main mit der id 'question' ID wird auch nchmal Prbleme mit sich bringen, aber das lösen wir später
